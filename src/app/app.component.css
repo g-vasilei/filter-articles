@@ -1,0 +1,86 @@
+.container {
+  max-width: 1024px;
+  margin: auto;
+  padding: 20px;
+}
+
+input[type="text"] {
+  width: 300px;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: #fff;
+  /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.13); */
+  border: 1px solid #eee;
+  margin-top: 20px;
+  border-radius: 10px;
+  height: 400px;
+  overflow: hidden;
+  padding: 12px;
+}
+
+.upper {
+  height: 50%;
+  position: relative;
+}
+
+.upper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.lower {
+  height: 50%;
+  padding-top: 10px;
+}
+
+.lower span {
+  color: rgb(95, 97, 119);
+  font-size: 14px;
+}
+
+.lower h2 {
+  font-size: 18px;
+}
+
+.lower p {
+  font-size: 16px;
+  margin-top: 14px;
+  overflow: hidden;
+
+  /* //display ... if more than 4 lines of text
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+}
+
+@media only screen and (min-width: 600px) {
+  .list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+
+  .container {
+    padding: 20px 0;
+  }
+}
